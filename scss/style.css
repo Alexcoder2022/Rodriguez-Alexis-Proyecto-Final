@@ -1,0 +1,628 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* home */
+.contenedor__header {
+  background-color: black;
+}
+
+.contenedor__header .contenedor__titulo {
+  text-align: center;
+}
+
+.contenedor__hambur .contenedor__listas li {
+  display: inline;
+  padding: 20px;
+}
+
+.contenedor__hambur .contenedor__listas li a {
+  text-decoration: none;
+  font-size: 25px;
+  color: blueviolet;
+  font-weight: 600;
+}
+
+.contenedor__hambur .contenedor__listas li a:hover {
+  color: red;
+  font-weight: 990;
+}
+
+.main__home {
+  background-color: white;
+  height: auto;
+}
+
+.main__home .main__container {
+  background-color: #d3bebe;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main__home .main__container .main__info {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main__home .main__container .main__info h2 {
+  font-weight: 800;
+  line-height: 1,5;
+  text-transform: uppercase;
+  font-family: 'Caudex', serif;
+}
+
+.main__home .main__container .main__info p {
+  font-weight: 800;
+  line-height: 1,5;
+  text-transform: uppercase;
+  font-family: 'Caudex', serif;
+}
+
+.main__home .main__container .main__info a {
+  background-color: gray;
+  color: black;
+  text-decoration: none;
+  font-weight: 800;
+  line-height: 1,5;
+  text-transform: uppercase;
+  font-family: 'Caudex', serif;
+}
+
+.data__info {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.data__info .data__contenedor {
+  background-color: black;
+  color: white;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 900px;
+}
+
+.data__info .data__contenedor h1 {
+  padding: 10px 10px 30px;
+  font-weight: 800;
+  line-height: 1,5;
+  text-transform: uppercase;
+  font-family: 'Caudex', serif;
+}
+
+.data__info .data__contenedor p {
+  letter-spacing: 2px;
+  font-weight: 800;
+  line-height: 1,5;
+  text-transform: uppercase;
+  font-family: 'Caudex', serif;
+}
+
+.data__info .data__contenedor h3 {
+  font-weight: 800;
+  line-height: 1,5;
+  text-transform: uppercase;
+  font-family: 'Caudex', serif;
+}
+
+.data__info .data__img {
+  gap: 5px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.data__info .data__img img {
+  width: 100%;
+}
+
+.box__info {
+  background-color: #d3bebe;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.box__info .info__style {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.box__info .info__style h2 {
+  font-weight: 800;
+  line-height: 1,5;
+  text-transform: uppercase;
+  font-family: 'Caudex', serif;
+  color: black;
+}
+
+.box__info .info__style p {
+  font-weight: 800;
+  line-height: 1,5;
+  text-transform: uppercase;
+  font-family: 'Caudex', serif;
+  color: black;
+}
+
+.box__info .info__style strong {
+  color: blueviolet;
+}
+
+.box__info .info__style2 {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pie .contenedor__pie {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.pie .contenedor__pie .box__pie1 {
+  color: blueviolet;
+}
+
+.pie .contenedor__pie .box__pie1 h3 {
+  font-weight: 800;
+  line-height: 1,5;
+  text-transform: uppercase;
+  font-family: 'Caudex', serif;
+}
+
+.pie .contenedor__pie .box__pie1 ul li {
+  font-weight: 800;
+  line-height: 1,5;
+  text-transform: uppercase;
+  font-family: 'Caudex', serif;
+  list-style: none;
+}
+
+.pie .contenedor__pie .box__pie2 {
+  color: blueviolet;
+}
+
+.pie .contenedor__pie .box__pie2 h3 {
+  font-weight: 800;
+  line-height: 1,5;
+  text-transform: uppercase;
+  font-family: 'Caudex', serif;
+}
+
+.pie .contenedor__pie .box__pie2 li {
+  font-weight: 800;
+  line-height: 1,5;
+  text-transform: uppercase;
+  font-family: 'Caudex', serif;
+  list-style: none;
+}
+
+.pie .contenedor__pie .box__pie3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pie .contenedor__pie .box__pie3 a {
+  padding: 5px;
+}
+
+/* Nosotros */
+.contenedor__nosotros {
+  background-color: #d3bebe;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.contenedor__nosotros .text__nosotros1 {
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding: 10px;
+  font-weight: 800;
+  line-height: 1,5;
+  text-transform: uppercase;
+  font-family: 'Caudex', serif;
+}
+
+.contenedor__nosotros .text__nosotros1 h1 {
+  padding-bottom: 20px;
+  font-weight: 800;
+}
+
+.contenedor__nosotros .text__nosotros1 p {
+  font-weight: 800;
+  line-height: 1,5;
+  text-transform: uppercase;
+  font-family: 'Caudex', serif;
+}
+
+.contenedor__nosotros .text__nosotros1 h4 {
+  font-weight: 800;
+  line-height: 1,5;
+  text-transform: uppercase;
+  font-family: 'Caudex', serif;
+}
+
+@media (min-width: 425px) and (max-width: 1150px) {
+  .contenedor__nosotros {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contenedor__nosotros .img__nosotros1 img {
+    width: 100%;
+  }
+  .contenedor__nosotros .img__nosotros2 img {
+    width: 100%;
+  }
+}
+
+/* servicios */
+.body__servicios {
+  background-color: black;
+}
+
+.main__servi {
+  background-color: #d3bebe;
+  border: solid 3px black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-shadow: 50px 5px 10px 10px blueviolet;
+          box-shadow: 50px 5px 10px 10px blueviolet;
+}
+
+.main__servi .main__descrip {
+  width: 990px;
+}
+
+.main__servi .main__descrip h2 {
+  font-weight: 800;
+  line-height: 1,5;
+  text-transform: uppercase;
+  font-family: 'Caudex', serif;
+  font-size: 35px;
+}
+
+.contenedor__servi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 20px;
+  /* Contacto */
+}
+
+.contenedor__servi .caja__infantiles {
+  border: solid 3px black;
+  -webkit-box-shadow: 50px 5px 10px 10px #f84ef0;
+          box-shadow: 50px 5px 10px 10px #f84ef0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #d3bebe;
+}
+
+.contenedor__servi .caja__infantiles .box__servi1 {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contenedor__servi .caja__infantiles .info__infantiles {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 800;
+  line-height: 1,5;
+  text-transform: uppercase;
+  font-family: 'Caudex', serif;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-bottom: 50px;
+}
+
+.contenedor__servi .caja__infantiles .info__infantiles h2 {
+  font-size: 80px;
+  background-color: gray;
+  -webkit-box-shadow: 3px 3px 3px 3px blueviolet;
+          box-shadow: 3px 3px 3px 3px blueviolet;
+}
+
+.contenedor__servi .caja__infantiles .info__infantiles .list__infantiles {
+  width: 600px;
+  list-style: none;
+  text-align: center;
+}
+
+.contenedor__servi .caja__infantiles .info__infantiles .list__infantiles li {
+  letter-spacing: 5px;
+  text-shadow: 3px 3px 3px white;
+}
+
+.contenedor__servi .caja__15años {
+  border: solid 3px black;
+  -webkit-box-shadow: 50px 5px 10px 10px blueviolet;
+          box-shadow: 50px 5px 10px 10px blueviolet;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  background-color: #d3bebe;
+}
+
+.contenedor__servi .caja__15años .box__servi2 {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contenedor__servi .caja__15años .info__15años {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 800;
+  line-height: 1,5;
+  text-transform: uppercase;
+  font-family: 'Caudex', serif;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-bottom: 50px;
+}
+
+.contenedor__servi .caja__15años .info__15años h2 {
+  font-size: 80px;
+  background-color: gray;
+  -webkit-box-shadow: 3px 3px 3px 3px #f84ef0;
+          box-shadow: 3px 3px 3px 3px #f84ef0;
+}
+
+.contenedor__servi .caja__15años .info__15años .list__15años {
+  width: 600px;
+  list-style: none;
+  text-align: center;
+}
+
+.contenedor__servi .caja__15años .info__15años .list__15años li {
+  letter-spacing: 5px;
+  text-shadow: 3px 3px 3px white;
+}
+
+.contenedor__servi .caja__casamientos {
+  background-color: #d3bebe;
+  border: solid 3px black;
+  -webkit-box-shadow: 50px 5px 10px 10px #f84ef0;
+          box-shadow: 50px 5px 10px 10px #f84ef0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contenedor__servi .caja__casamientos .box__servi3 {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contenedor__servi .caja__casamientos .info__casamientos {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 800;
+  line-height: 1,5;
+  text-transform: uppercase;
+  font-family: 'Caudex', serif;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-bottom: 50px;
+}
+
+.contenedor__servi .caja__casamientos .info__casamientos h2 {
+  font-size: 80px;
+  background-color: gray;
+  -webkit-box-shadow: 3px 3px 3px 3px blueviolet;
+          box-shadow: 3px 3px 3px 3px blueviolet;
+}
+
+.contenedor__servi .caja__casamientos .info__casamientos .list__casamientos {
+  width: 600px;
+  list-style: none;
+  text-align: center;
+}
+
+.contenedor__servi .caja__casamientos .info__casamientos .list__casamientos li {
+  letter-spacing: 5px;
+  text-shadow: 3px 3px 3px white;
+}
+
+.contenedor__servi .caja__corporativo {
+  background-color: #d3bebe;
+  border: solid 3px black;
+  -webkit-box-shadow: 50px 5px 10px 10px blueviolet;
+          box-shadow: 50px 5px 10px 10px blueviolet;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.contenedor__servi .caja__corporativo .box__servi4 {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contenedor__servi .caja__corporativo .info__corpo {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 800;
+  line-height: 1,5;
+  text-transform: uppercase;
+  font-family: 'Caudex', serif;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-bottom: 50px;
+}
+
+.contenedor__servi .caja__corporativo .info__corpo h2 {
+  font-size: 80px;
+  background-color: gray;
+  -webkit-box-shadow: 3px 3px 3px 3px #f84ef0;
+          box-shadow: 3px 3px 3px 3px #f84ef0;
+}
+
+.contenedor__servi .caja__corporativo .info__corpo .list__corpo {
+  width: 600px;
+  list-style: none;
+  text-align: center;
+}
+
+.contenedor__servi .caja__corporativo .info__corpo .list__corpo li {
+  letter-spacing: 5px;
+  text-shadow: 3px 3px 3px white;
+}
+/*# sourceMappingURL=style.css.map */

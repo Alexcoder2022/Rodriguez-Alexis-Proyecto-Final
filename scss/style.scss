@@ -1,0 +1,511 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+               /* home */
+               
+          
+.contenedor__header {
+    @import"vars";
+    background-color: $bgcolor;
+    .contenedor__titulo{
+        text-align: center;
+       
+    }
+    
+}
+.contenedor__hambur {
+    .contenedor__listas{
+        li {
+            display: inline;
+            padding: 20px;
+            a {
+                @import"vars";
+                text-decoration: none;
+                font-size: 25px;
+                color:$color;
+                font-weight: 600;
+            }
+        }    
+    }
+}
+.contenedor__hambur {
+    .contenedor__listas {
+        li {
+            a:hover {
+                color: red;
+                font-weight: 990;
+            }
+        }
+    }
+}
+
+@mixin prueba{
+    font-weight: 800;
+    line-height: 1,5;
+    text-transform: uppercase;
+    font-family: 'Caudex', serif;
+    
+}
+.main__home {
+    background-color:white;
+    height: auto;
+    
+    .main__container {
+        background-color: rgb(211, 190, 190);
+        display: flex;
+        justify-content: space-between;
+        .main__info {
+           
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h2 {
+                @include prueba;    
+            }
+            p {
+                @include prueba;   
+            }
+            a {
+                background-color: gray;
+                color: black;
+                text-decoration: none;
+                @include prueba;
+            }        
+        }
+      
+    }
+
+}
+
+.data__info {
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    .data__contenedor {
+        background-color: black;
+        color: white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 900px;
+
+        h1 {
+           
+            padding: 10px 10px 30px;
+            @include prueba;
+
+        }
+        p {
+            
+            letter-spacing: 2px;
+            @include prueba;
+
+        }
+        h3 {
+           
+            @include prueba;
+
+        }
+        
+    }
+    .data__img {
+        gap: 5px;
+        display: grid;
+        grid-template-columns: repeat(4 ,1fr);
+        img {
+            width: 100%;
+        }
+    }
+    
+}
+
+
+.box__info {
+    @import"vars";
+    background-color:rgb(211, 190, 190);  
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .info__style {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+       
+        h2 {
+            @include prueba;
+            color: black
+        } 
+        p {
+            @include prueba;
+            color:black;
+
+        }
+        strong {
+            color: blueviolet;
+        }
+    } 
+    .info__style2 {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    
+    }
+
+   
+}
+
+
+
+.pie {
+    .contenedor__pie {
+        background-color: black;
+        display: flex;
+        justify-content: space-around;
+        
+        
+        .box__pie1 {
+            color:blueviolet;
+
+           
+          
+           h3 {
+               @include prueba;
+              
+
+            }
+           ul {
+               
+               
+            li {
+                @include prueba;
+                list-style: none;
+                
+
+ 
+            }
+
+           }
+        }
+        .box__pie2 {
+            color: blueviolet;
+            h3 {
+                @include prueba;
+               
+
+            }
+            li {
+                @include prueba;
+                list-style: none;
+              
+
+            }
+        }
+        .box__pie3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a {
+                padding: 5px;
+            }
+        }
+    }
+
+}
+                    /* Nosotros */
+
+.contenedor__nosotros {
+    background-color: rgb(211, 190, 190);
+    @import"vars";
+    display: flex;
+    flex-direction: row;
+    
+    
+    .text__nosotros1 {
+        color: black;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        padding: 10px;
+       
+       
+        @include prueba;
+        h1 {
+            padding-bottom: 20px;
+            font-weight: 800
+        }
+        p {
+            @include prueba;
+        }
+        h4 {
+            @include prueba;
+           
+        }
+              
+
+      
+    }
+
+}
+@media (min-width:425px)and(max-width:1150px) {
+    .contenedor__nosotros {
+        display: flex;
+        flex-direction: column;
+        .img__nosotros1 {
+            img {
+                width: 100%;
+
+            }
+           
+        }
+        .img__nosotros2 {
+            img {
+                width: 100%;
+            }
+        }
+    }
+    
+    
+}
+           /* servicios */
+
+.body__servicios {
+    background-color: black;
+}           
+
+ .main__servi {
+     background-color:rgb(211, 190, 190);
+     border:solid 3px black;
+     display: flex;
+     justify-content: center;
+     text-align: center;
+     box-shadow: 50px 5px 10px 10px blueviolet;
+
+     .main__descrip {
+         width: 990px;
+         
+         h2 {
+            @include prueba;
+            font-size: 35px;
+
+
+        }
+      
+        
+
+
+     }
+ }         
+
+.contenedor__servi {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+ 
+    .caja__infantiles {
+        border: solid 3px black; 
+        box-shadow: 50px 5px 10px 10px rgb(248, 78, 240);    
+        display: flex;
+        background-color:rgb(211, 190, 190) ;
+
+      .box__servi1 {
+          width: 50%;
+          display: flex;
+          justify-content: center;
+        }  
+
+      .info__infantiles {
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          @include prueba;
+          justify-content: space-around;
+          padding-bottom: 50px;
+          
+          
+          h2 {
+              font-size: 80px;
+              background-color: gray;
+              box-shadow: 3px 3px 3px 3px blueviolet;
+              
+
+              
+            }
+          .list__infantiles {
+              width: 600px;
+              
+              list-style: none;
+              text-align: center;
+              li {
+                  letter-spacing: 5px;
+                  text-shadow: 3px 3px 3px white;
+                } 
+            
+                        
+            }
+        }
+    }
+    .caja__15años {
+        border: solid 3px black; 
+        box-shadow: 50px 5px 10px 10px blueviolet;    
+        display: flex;
+        flex-direction: row-reverse;
+        background-color:rgb(211, 190, 190);
+
+        .box__servi2 {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+        } 
+        .info__15años {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @include prueba;
+            justify-content: space-around;
+            padding-bottom: 50px;
+            h2 {
+                font-size: 80px;
+                background-color: gray;
+                box-shadow: 3px 3px 3px 3px rgb(248, 78, 240);
+
+            }
+            .list__15años {
+                width: 600px;
+                list-style: none;
+               text-align: center;
+               li {
+                letter-spacing: 5px;
+                text-shadow: 3px 3px 3px white;
+
+               }
+
+            }
+        } 
+   
+   
+    }
+    .caja__casamientos {
+        background-color: rgb(211, 190, 190);
+        border: solid 3px black; 
+        box-shadow: 50px 5px 10px 10px rgb(248, 78, 240);     
+        display: flex;
+
+        .box__servi3 {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+
+        }
+        .info__casamientos {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @include prueba;
+            justify-content: space-around;
+            padding-bottom: 50px;
+            h2 {
+                font-size: 80px;
+                background-color: gray;
+                box-shadow: 3px 3px 3px 3px blueviolet;
+                 
+
+            }
+            .list__casamientos {
+                width: 600px;
+                list-style: none;
+                text-align: center;
+                li {
+                    letter-spacing: 5px;
+                    text-shadow: 3px 3px 3px white;
+
+                }
+
+            }
+
+        }
+        
+
+    }
+    .caja__corporativo {
+        background-color: rgb(211, 190, 190);
+        border: solid 3px black; 
+        box-shadow: 50px 5px 10px 10px blueviolet;   
+        display: flex;
+        flex-direction: row-reverse;
+        .box__servi4 {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+
+        }
+        .info__corpo {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @include prueba;
+            justify-content: space-around;
+            padding-bottom: 50px;
+           
+            h2 {
+                font-size: 80px;
+                background-color: gray;
+                box-shadow: 3px 3px 3px 3px rgb(248, 78, 240);
+
+            }
+            .list__corpo {
+                width: 600px;
+                list-style: none;
+                text-align: center;
+                li {
+                    letter-spacing: 5px;
+                    text-shadow: 3px 3px 3px white;
+                }
+                
+
+            }
+
+        }
+        
+
+    }
+            /* Contacto */
+
+.contacto__formulario {
+    
+    .contacto__tex{
+       
+        
+    }
+}            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}  
+ 
