@@ -3,28 +3,28 @@
     padding: 0;
     box-sizing: border-box;
 }
-               /* home */
-               
-          
+
+/* home */
+         
 .contenedor__header {
-    @import"vars";
-    background-color: $bgcolor;
-    .contenedor__titulo{
+    @import "vars";
+    background-color: $fondoNegro;
+
+    .contenedor__titulo {
         text-align: center;
        
     }
     
 }
+
 .contenedor__hambur {
-    .contenedor__listas{
+    .contenedor__listas {
         li {
             display: inline;
             padding: 20px;
             a {
-                @import"vars";
                 text-decoration: none;
                 font-size: 25px;
-                color:$color;
                 font-weight: 600;
             }
         }    
@@ -40,28 +40,43 @@
         }
     }
 }
-
-@mixin prueba{
+@mixin prueba {
     font-weight: 800;
     line-height: 1,5;
     text-transform: uppercase;
-    font-family: 'Caudex', serif;
-    
+    font-family: 'Caudex', serif; 
 }
+
 .main__home {
-    background-color:white;
+    @import "vars";
+    background-color:$fondoBlanco;
     height: auto;
-    
+    width: auto;
+
     .main__container {
-        background-color: rgb(211, 190, 190);
+        @import "vars";
+        background-color:$colorFondo;
         display: flex;
         justify-content: space-between;
+        width: 100%;
+        .main__foto1 {
+            width: 100%;
+            
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+      
+       
+       
         .main__info {
-           
+            width: 100%;
             text-align: center;
             display: flex;
             flex-direction: column;
             justify-content: center;
+           
             h2 {
                 @include prueba;    
             }
@@ -75,50 +90,53 @@
                 @include prueba;
             }        
         }
+        .main__foto2 {
+            width: 100%;
+           
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
       
     }
 
 }
 
 .data__info {
-    background-color:black;
+    @import "vars";
+    background-color:$fondoNegro;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
 
     .data__contenedor {
-        background-color: black;
+        @import "vars";
+        background-color:$fondoNegro;
         color: white;
         text-align: center;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 900px;
+        width: 100%;
 
         h1 {
-           
             padding: 10px 10px 30px;
             @include prueba;
-
         }
         p {
-            
             letter-spacing: 2px;
             @include prueba;
-
         }
         h3 {
-           
             @include prueba;
-
         }
         
     }
     .data__img {
-        gap: 5px;
         display: grid;
-        grid-template-columns: repeat(4 ,1fr);
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 5px;
         img {
             width: 100%;
         }
@@ -126,87 +144,68 @@
     
 }
 
-
 .box__info {
-    @import"vars";
-    background-color:rgb(211, 190, 190);  
+    @import "vars";
+    background-color:$colorFondo;
     height: 400px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     .info__style {
-        width: 50%;
+        width: auto;
         display: flex;
         flex-direction: column;
         text-align: center;
-       
         h2 {
             @include prueba;
-            color: black
+            @import "vars";
+            color:$fondoNegro;
         } 
         p {
             @include prueba;
-            color:black;
+            @import "vars";
+            color:$fondoNegro;
 
         }
         strong {
-            color: blueviolet;
+            @import "vars";
+            color:$fondoParadise;
         }
     } 
     .info__style2 {
-        width: 50%;
+        width: 100%;
         display: flex;
         justify-content: center;
-    
-    }
-
-   
+    }  
 }
-
-
-
 .pie {
     .contenedor__pie {
         background-color: black;
         display: flex;
         justify-content: space-around;
-        
-        
-        .box__pie1 {
+        .box__pie1 { 
+
             color:blueviolet;
-
-           
-          
-           h3 {
-               @include prueba;
-              
-
-            }
-           ul {
-               
-               
-            li {
+            h3 {
                 @include prueba;
-                list-style: none;
-                
-
- 
             }
-
-           }
+            ul {
+                li {
+                    @include prueba;
+                    list-style: none;   
+                } 
+                
+            }
         }
         .box__pie2 {
             color: blueviolet;
             h3 {
                 @include prueba;
-               
-
             }
             li {
                 @include prueba;
                 list-style: none;
-              
-
             }
         }
         .box__pie3 {
@@ -220,152 +219,129 @@
     }
 
 }
-                    /* Nosotros */
+/* Nosotros */
 
 .contenedor__nosotros {
     background-color: rgb(211, 190, 190);
-    @import"vars";
     display: flex;
-    flex-direction: row;
     
+    .img__nosotros1 {
+        width: auto;
+       
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+    }
     
     .text__nosotros1 {
+        width: 50%;
         color: black;
         display: flex;
         flex-direction: column;
         align-self: center;
         padding: 10px;
-       
-       
         @include prueba;
         h1 {
+            
             padding-bottom: 20px;
-            font-weight: 800
+            font-weight: 800;    
         }
         p {
             @include prueba;
         }
         h4 {
-            @include prueba;
-           
-        }
-              
-
-      
+            @include prueba;  
+        } 
     }
-
-}
-@media (min-width:425px)and(max-width:1150px) {
-    .contenedor__nosotros {
-        display: flex;
-        flex-direction: column;
-        .img__nosotros1 {
-            img {
-                width: 100%;
-
-            }
-           
-        }
-        .img__nosotros2 {
-            img {
-                width: 100%;
-            }
+    .img__nosotros2 {
+        width: auto;
+        img {
+           width:100%;
+           height: 100%;
         }
     }
-    
-    
 }
-           /* servicios */
+
+
+    
+
+/* servicios */
 
 .body__servicios {
     background-color: black;
-}           
-
- .main__servi {
-     background-color:rgb(211, 190, 190);
-     border:solid 3px black;
-     display: flex;
-     justify-content: center;
-     text-align: center;
-     box-shadow: 50px 5px 10px 10px blueviolet;
-
-     .main__descrip {
-         width: 990px;
-         
-         h2 {
+}
+.main__servi {
+    background-color:rgb(211, 190, 190);
+    border:solid 3px black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 50px 5px 10px 10px blueviolet;
+    .main__descrip {
+        width: 990px;
+        h2 {
             @include prueba;
             font-size: 35px;
-
-
-        }
-      
-        
-
-
-     }
- }         
-
-.contenedor__servi {
-  display: flex;
-  flex-direction: column;
-  padding-top: 20px;
- 
-    .caja__infantiles {
-        border: solid 3px black; 
-        box-shadow: 50px 5px 10px 10px rgb(248, 78, 240);    
-        display: flex;
-        background-color:rgb(211, 190, 190) ;
-
-      .box__servi1 {
-          width: 50%;
-          display: flex;
-          justify-content: center;
-        }  
-
-      .info__infantiles {
-          width: 50%;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          @include prueba;
-          justify-content: space-around;
-          padding-bottom: 50px;
-          
-          
-          h2 {
-              font-size: 80px;
-              background-color: gray;
-              box-shadow: 3px 3px 3px 3px blueviolet;
-              
-
-              
-            }
-          .list__infantiles {
-              width: 600px;
-              
-              list-style: none;
-              text-align: center;
-              li {
-                  letter-spacing: 5px;
-                  text-shadow: 3px 3px 3px white;
-                } 
-            
-                        
-            }
         }
     }
+}
+
+
+.contenedor__servi {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    .caja__infantiles {
+
+        border: solid 3px black;
+        box-shadow: 50px 5px 10px 10px rgb(248, 78, 240);
+        display: flex;
+        background-color:rgb(211, 190, 190);
+        .box__servi1 {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+        }
+        .info__infantiles {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @include prueba;
+            justify-content: space-around;
+            padding-bottom: 50px;
+            h2 {
+                font-size: 80px;
+                background-color: gray;
+                box-shadow: 3px 3px 3px 3px blueviolet;
+            }
+            .list__infantiles {
+                width: 600px;
+                list-style: none;
+                text-align: center;
+                li {
+                    letter-spacing: 5px;
+                    text-shadow: 3px 3px 3px white;
+                }
+            }
+
+        }
+       
+    }
     .caja__15años {
+
         border: solid 3px black; 
         box-shadow: 50px 5px 10px 10px blueviolet;    
         display: flex;
         flex-direction: row-reverse;
         background-color:rgb(211, 190, 190);
-
         .box__servi2 {
             width: 50%;
             display: flex;
             justify-content: center;
-        } 
+        }
         .info__15años {
             width: 50%;
             display: flex;
@@ -378,34 +354,27 @@
                 font-size: 80px;
                 background-color: gray;
                 box-shadow: 3px 3px 3px 3px rgb(248, 78, 240);
-
             }
             .list__15años {
                 width: 600px;
                 list-style: none;
-               text-align: center;
-               li {
-                letter-spacing: 5px;
-                text-shadow: 3px 3px 3px white;
-
-               }
-
+                text-align: center;
+                li {
+                    letter-spacing: 5px;
+                    text-shadow: 3px 3px 3px white;
+                }
             }
-        } 
-   
-   
+        }
     }
     .caja__casamientos {
         background-color: rgb(211, 190, 190);
         border: solid 3px black; 
         box-shadow: 50px 5px 10px 10px rgb(248, 78, 240);     
         display: flex;
-
         .box__servi3 {
             width: 50%;
             display: flex;
             justify-content: center;
-
         }
         .info__casamientos {
             width: 50%;
@@ -419,8 +388,6 @@
                 font-size: 80px;
                 background-color: gray;
                 box-shadow: 3px 3px 3px 3px blueviolet;
-                 
-
             }
             .list__casamientos {
                 width: 600px;
@@ -429,14 +396,9 @@
                 li {
                     letter-spacing: 5px;
                     text-shadow: 3px 3px 3px white;
-
                 }
-
             }
-
         }
-        
-
     }
     .caja__corporativo {
         background-color: rgb(211, 190, 190);
@@ -448,7 +410,6 @@
             width: 50%;
             display: flex;
             justify-content: center;
-
         }
         .info__corpo {
             width: 50%;
@@ -458,12 +419,10 @@
             @include prueba;
             justify-content: space-around;
             padding-bottom: 50px;
-           
             h2 {
                 font-size: 80px;
                 background-color: gray;
                 box-shadow: 3px 3px 3px 3px rgb(248, 78, 240);
-
             }
             .list__corpo {
                 width: 600px;
@@ -473,39 +432,307 @@
                     letter-spacing: 5px;
                     text-shadow: 3px 3px 3px white;
                 }
-                
+            }
+        }
+    }
+}
+
+.contacto__formulario {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    @import "vars";
+    background-color: $colorFondo;
+    .contacto__tex {
+       
+        h1 {
+            font-family: 'Caudex', serif;
+            text-shadow: 2px 2px 2px blueviolet;
+
+        }
+        p {
+            font-family: 'Caudex', serif; 
+        }
+    }
+    
+    
+
+}
+.contenedor__formu {
+    @import "vars";
+    background-color: $colorFondo;
+    display: flex;
+    justify-content: space-around;
+   .contacto__datos {
+       padding-top: 20px;
+       padding-bottom: 20px;
+       box-shadow: 10px 10px 20px 10px rgb(248, 78, 240) ;
+      
+     
+       display: flex;
+       justify-content: center;
+       form {
+           display: flex;
+           flex-direction: column;
+           width: 350px;
+           border: solid 2px black;
+           legend {
+            font-family: 'Caudex', serif; 
+           }
+           label {
+            font-family: 'Caudex', serif; 
+           }
+           input {
+            font-family: 'Caudex', serif; 
+           }
+        }
+       
+        
+    }
+    .contacto__mapa {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2 {
+            font-family: 'Caudex', serif; 
+        }
+      
+    }
+  
+}
+
+
+
+@media (max-width:768px) {
+    /* home */
+    .contenedor__header {
+        width: 100%;
+    }
+    .main__container {
+        display: flex;
+        flex-direction: column;
+        .main__foto1 {
+            img {
+                width: 100%;
+            }
+        }
+        .main__foto2 {
+            img {
+                width: 100%;
+
+            }
+        }
+    }
+    .data__info {
+        .data__contenedor {
+            width: auto;
+        }
+
+    }
+    .box__info {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+    }
+
+    /* nosotros */
+    .contenedor__titulo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .contenedor__logo {
+            img {
+                width: auto;
+    
+            }
+        
+        }
+
+    }
+    
+    .contenedor__nosotros {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .img__nosotros1 {
+            img {
+                width: 100%;
+            }  
+        }
+        .text__nosotros1 {
+            width: 100%;
+        }
+        .img__nosotros2 {
+            img {
+                width: 100%;
+            }
+        }
+    }
+    /* servicios */
+    .main__servi {
+        width: 100%;
+    }
+   
+    .contenedor__servi {
+        display: flex;
+        flex-direction: column;
+        
+        width: 100%;
+        .caja__infantiles {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            .box__servi1 {
+                width: auto;
+                img {
+                    width: 100%;
+                }
+            }
+            .info__infantiles {
+                display: flex;
+                flex-direction: column;
+                width: auto;
+                text-align: center;
+                h2 {
+                    width: 100%;
+                }
+                .list__infantiles {
+                    width: 100%;
+                }
+            }
+        }
+        .caja__15años {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            .box__servi2 {
+                width: auto;
+                img {
+                    width: 100%;
+                }
+            }
+            .info__15años {
+                display: flex;
+                flex-direction: column;
+                width: auto;
+                text-align: center;
+                h2 {
+                    width: 100%;
+
+                }
+                .list__15años {
+                    width: 100%;
+                }
 
             }
 
         }
-        
+        .caja__casamientos {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            .box__servi3 {
+                width: auto;
+                img {
+                    width: 100%;
+                }
 
+            }
+            .info__casamientos {
+                display: flex;
+                flex-direction: column;
+                width: auto;
+                text-align: center;
+                h2 {
+                    width: 100%;
+
+                }
+                .list__casamientos {
+                    width:100%;
+                }
+
+            }
+            
+        }
+        .caja__corporativo {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            .box__servi4 {
+                width: auto;
+                img {
+                    width: 100%;
+                }
+            }
+            .info__corpo {
+                display: flex;
+                flex-direction: column;
+                width: auto;
+                text-align: center;
+                h2 {
+                    width:100%;
+
+                }
+                .list__corpo {
+                    width: auto;
+                }
+
+            }
+
+        }
     }
-            /* Contacto */
 
-.contacto__formulario {
     
-    .contacto__tex{
-       
-        
+    
+
+
+
+
+
+
+    /* contacto */   
+    .contenedor__logo {
+        img {
+            width: 100%;
+        }
     }
-}            
+   
+    .contacto__formulario {
+        @import "vars";
+        background-color: $colorFondo;
+        .contacto__tex {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+        }
+    }
+    .contenedor__formu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .contacto__datos {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            form {
+                width: 100%;
+            }
+        }
+
+    }
+    .pie {
+        .contenedor__pie {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+    }
+   
+}
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-}  
- 

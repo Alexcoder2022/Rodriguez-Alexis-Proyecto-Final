@@ -23,7 +23,6 @@
 .contenedor__hambur .contenedor__listas li a {
   text-decoration: none;
   font-size: 25px;
-  color: blueviolet;
   font-weight: 600;
 }
 
@@ -35,6 +34,7 @@
 .main__home {
   background-color: white;
   height: auto;
+  width: auto;
 }
 
 .main__home .main__container {
@@ -45,9 +45,20 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
+}
+
+.main__home .main__container .main__foto1 {
+  width: 100%;
+}
+
+.main__home .main__container .main__foto1 img {
+  width: 100%;
+  height: 100%;
 }
 
 .main__home .main__container .main__info {
+  width: 100%;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -85,6 +96,15 @@
   font-family: 'Caudex', serif;
 }
 
+.main__home .main__container .main__foto2 {
+  width: 100%;
+}
+
+.main__home .main__container .main__foto2 img {
+  width: 100%;
+  height: 100%;
+}
+
 .data__info {
   background-color: black;
   display: -webkit-box;
@@ -94,8 +114,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -115,7 +133,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 900px;
+  width: 100%;
 }
 
 .data__info .data__contenedor h1 {
@@ -142,11 +160,11 @@
 }
 
 .data__info .data__img {
-  gap: 5px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5px;
 }
 
 .data__info .data__img img {
@@ -156,6 +174,7 @@
 .box__info {
   background-color: #d3bebe;
   height: 400px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -168,7 +187,7 @@
 }
 
 .box__info .info__style {
-  width: 50%;
+  width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -200,7 +219,7 @@
 }
 
 .box__info .info__style2 {
-  width: 50%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -278,13 +297,19 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+}
+
+.contenedor__nosotros .img__nosotros1 {
+  width: auto;
+}
+
+.contenedor__nosotros .img__nosotros1 img {
+  width: 100%;
+  height: 100%;
 }
 
 .contenedor__nosotros .text__nosotros1 {
+  width: 50%;
   color: black;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -321,22 +346,13 @@
   font-family: 'Caudex', serif;
 }
 
-@media (min-width: 425px) and (max-width: 1150px) {
-  .contenedor__nosotros {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .contenedor__nosotros .img__nosotros1 img {
-    width: 100%;
-  }
-  .contenedor__nosotros .img__nosotros2 img {
-    width: 100%;
-  }
+.contenedor__nosotros .img__nosotros2 {
+  width: auto;
+}
+
+.contenedor__nosotros .img__nosotros2 img {
+  width: 100%;
+  height: 100%;
 }
 
 /* servicios */
@@ -379,7 +395,6 @@
       -ms-flex-direction: column;
           flex-direction: column;
   padding-top: 20px;
-  /* Contacto */
 }
 
 .contenedor__servi .caja__infantiles {
@@ -624,5 +639,354 @@
 .contenedor__servi .caja__corporativo .info__corpo .list__corpo li {
   letter-spacing: 5px;
   text-shadow: 3px 3px 3px white;
+}
+
+.contacto__formulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  background-color: #d3bebe;
+}
+
+.contacto__formulario .contacto__tex h1 {
+  font-family: 'Caudex', serif;
+  text-shadow: 2px 2px 2px blueviolet;
+}
+
+.contacto__formulario .contacto__tex p {
+  font-family: 'Caudex', serif;
+}
+
+.contenedor__formu {
+  background-color: #d3bebe;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contenedor__formu .contacto__datos {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  -webkit-box-shadow: 10px 10px 20px 10px #f84ef0;
+          box-shadow: 10px 10px 20px 10px #f84ef0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contenedor__formu .contacto__datos form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 350px;
+  border: solid 2px black;
+}
+
+.contenedor__formu .contacto__datos form legend {
+  font-family: 'Caudex', serif;
+}
+
+.contenedor__formu .contacto__datos form label {
+  font-family: 'Caudex', serif;
+}
+
+.contenedor__formu .contacto__datos form input {
+  font-family: 'Caudex', serif;
+}
+
+.contenedor__formu .contacto__mapa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contenedor__formu .contacto__mapa h2 {
+  font-family: 'Caudex', serif;
+}
+
+@media (max-width: 768px) {
+  /* home */
+  .contenedor__header {
+    width: 100%;
+  }
+  .main__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main__container .main__foto1 img {
+    width: 100%;
+  }
+  .main__container .main__foto2 img {
+    width: 100%;
+  }
+  .data__info .data__contenedor {
+    width: auto;
+  }
+  .box__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    width: auto;
+  }
+  /* nosotros */
+  .contenedor__titulo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contenedor__titulo .contenedor__logo img {
+    width: auto;
+  }
+  .contenedor__nosotros {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .contenedor__nosotros .img__nosotros1 img {
+    width: 100%;
+  }
+  .contenedor__nosotros .text__nosotros1 {
+    width: 100%;
+  }
+  .contenedor__nosotros .img__nosotros2 img {
+    width: 100%;
+  }
+  /* servicios */
+  .main__servi {
+    width: 100%;
+  }
+  .contenedor__servi {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .contenedor__servi .caja__infantiles {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .contenedor__servi .caja__infantiles .box__servi1 {
+    width: auto;
+  }
+  .contenedor__servi .caja__infantiles .box__servi1 img {
+    width: 100%;
+  }
+  .contenedor__servi .caja__infantiles .info__infantiles {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: auto;
+    text-align: center;
+  }
+  .contenedor__servi .caja__infantiles .info__infantiles h2 {
+    width: 100%;
+  }
+  .contenedor__servi .caja__infantiles .info__infantiles .list__infantiles {
+    width: 100%;
+  }
+  .contenedor__servi .caja__15años {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .contenedor__servi .caja__15años .box__servi2 {
+    width: auto;
+  }
+  .contenedor__servi .caja__15años .box__servi2 img {
+    width: 100%;
+  }
+  .contenedor__servi .caja__15años .info__15años {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: auto;
+    text-align: center;
+  }
+  .contenedor__servi .caja__15años .info__15años h2 {
+    width: 100%;
+  }
+  .contenedor__servi .caja__15años .info__15años .list__15años {
+    width: 100%;
+  }
+  .contenedor__servi .caja__casamientos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .contenedor__servi .caja__casamientos .box__servi3 {
+    width: auto;
+  }
+  .contenedor__servi .caja__casamientos .box__servi3 img {
+    width: 100%;
+  }
+  .contenedor__servi .caja__casamientos .info__casamientos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: auto;
+    text-align: center;
+  }
+  .contenedor__servi .caja__casamientos .info__casamientos h2 {
+    width: 100%;
+  }
+  .contenedor__servi .caja__casamientos .info__casamientos .list__casamientos {
+    width: 100%;
+  }
+  .contenedor__servi .caja__corporativo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .contenedor__servi .caja__corporativo .box__servi4 {
+    width: auto;
+  }
+  .contenedor__servi .caja__corporativo .box__servi4 img {
+    width: 100%;
+  }
+  .contenedor__servi .caja__corporativo .info__corpo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: auto;
+    text-align: center;
+  }
+  .contenedor__servi .caja__corporativo .info__corpo h2 {
+    width: 100%;
+  }
+  .contenedor__servi .caja__corporativo .info__corpo .list__corpo {
+    width: auto;
+  }
+  /* contacto */
+  .contenedor__logo img {
+    width: 100%;
+  }
+  .contacto__formulario {
+    background-color: #d3bebe;
+  }
+  .contacto__formulario .contacto__tex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .contenedor__formu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .contenedor__formu .contacto__datos {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contenedor__formu .contacto__datos form {
+    width: 100%;
+  }
+  .pie .contenedor__pie {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=style.css.map */
