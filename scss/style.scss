@@ -436,6 +436,31 @@
         }
     }
 }
+/* Fotos */
+.titulo__gale {
+    background-color:rgb(211, 190, 190);
+
+    .box__gale {
+        p {
+            font-family: 'Caudex', serif; 
+            font-size: 40px;
+            text-shadow: 2px 2px 2px rgb(248, 78, 240);
+
+
+        }
+        
+    }
+
+}
+
+
+
+
+
+
+
+
+/* contacto */
 
 .contacto__formulario {
     display: flex;
@@ -466,7 +491,7 @@
    .contacto__datos {
        padding-top: 20px;
        padding-bottom: 20px;
-       box-shadow: 10px 10px 20px 10px rgb(248, 78, 240) ;
+       box-shadow: 10px 10px 20px 5px rgb(248, 78, 240) ;
       
      
        display: flex;
@@ -501,7 +526,51 @@
   
 }
 
+/* media */
 
+
+@media (max-width:425px) {
+    .gale__img {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    
+}
+@media (min-width:426px) and (max-width:767px) {
+   
+    .gale__img {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+        img {
+            width: 100%;
+        }
+        .ft__1 {
+            grid-column: 1/3;
+            grid-row: 1/3;
+        }
+
+    }
+    
+
+}
+@media (min-width:768px) {
+    .gale__img {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 5px;
+        img {
+            width: 100%;
+        }
+    }
+    .ft__1 {
+        grid-column: 1/3;
+        grid-row: 1/3;
+    }
+    
+}
 
 @media (max-width:768px) {
     /* home */
@@ -596,6 +665,7 @@
                 text-align: center;
                 h2 {
                     width: 100%;
+                    font-size: 40px;
                 }
                 .list__infantiles {
                     width: 100%;
@@ -619,6 +689,7 @@
                 text-align: center;
                 h2 {
                     width: 100%;
+                    font-size: 40px;
 
                 }
                 .list__15años {
@@ -646,6 +717,7 @@
                 text-align: center;
                 h2 {
                     width: 100%;
+                    font-size: 40px;
 
                 }
                 .list__casamientos {
@@ -672,6 +744,7 @@
                 text-align: center;
                 h2 {
                     width:100%;
+                    font-size: 40px;
 
                 }
                 .list__corpo {
@@ -683,6 +756,12 @@
         }
     }
 
+    /* Galeria */
+
+    
+   
+
+  
     
     
 
@@ -691,7 +770,7 @@
 
 
 
-    /* contacto */   
+    /* Contacto */   
     .contenedor__logo {
         img {
             width: 100%;
