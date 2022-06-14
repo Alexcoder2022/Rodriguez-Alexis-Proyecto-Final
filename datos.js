@@ -34,39 +34,13 @@ function validar_datos(){
     let input_mensaje = document.getElementById("mensaje").value;
 
 
-    if (!input_surname){
-
-        alert("Ingrese su apellido ");
-
-        return false;
-    }
-    if (!input_name){
-
-        alert("Ingrese su nombre ");
-
-        return false;
-    }
-    if (!input_tel){
-
-        alert("Ingrese su telefono ");
-
-        return false;
-    }
-    if (!input_mail){
-
-        alert("Ingrese su mail ");
-
-        return false;
-    }
-    if (!input_mensaje){
-
-        alert(" Por favor ingrese su consulta");
-
-        return false;
-    }
+    (!input_surname) ? alert("Ingrese su apellido ") : false;
+    (!input_name) ? alert("Ingrese su nombre ") : false;
+    (!input_tel) ? alert("Ingrese su telefono") : false;
+    (!input_mail) ? alert("Ingrese su mail ") : false;
+    (!input_mensaje)? alert("Ingrese su mensaje ") : false;
     return true;
-    
-    
+   
     
 }
 
