@@ -11,6 +11,7 @@ let coleccion_datos = datos_local_storage();
 
 
 boton_crear.addEventListener("click",()=>{
+    
    
 
     if (validar_datos()){
@@ -19,11 +20,16 @@ boton_crear.addEventListener("click",()=>{
 
         resetear_formulario();
 
+        
+
+
+
     }else{
         alert(" Por favor ingrese todos los datos");
     }
 
 }) 
+crear_alert()
 
 function validar_datos(){
 
@@ -57,6 +63,7 @@ function generar_cliente(){
     id++ ;
 
     coleccion_datos.push(nuevo_cliente);
+
     localStorage.setItem(clave_local_storage,JSON.stringify(coleccion_datos));
     
 }
@@ -83,4 +90,17 @@ function datos_local_storage(){
         return arreglo;
     }
     return new Array();
+}
+
+function crear_alert() {
+    Swal.fire({
+        title: 'Custom animation with Animate.css',
+        showClass: {
+          popup: 'animate__animated animate__fadeInDown'
+        },
+        hideClass: {
+          popup: 'animate__animated animate__fadeOutUp'
+        }
+      })
+
 }
